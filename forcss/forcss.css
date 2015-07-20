@@ -1,0 +1,384 @@
+/*=================================级数1容器====================================*/
+.container{
+	width: 100%;/*======满屏========*/
+    margin: 0 auto;
+    padding: 0;
+    background:#EBEBE9;
+    /*border:2px blue solid;=================================蓝色====================================*/
+}
+/*=================================级数1容器====================================*/
+/*=================================导航栏====================================*/
+.globalNav{
+  width: 100%;
+   height: 40px;/*渐变条，有点难看的说*/
+   background: -webkit-gradient(linear, left top, right top, from(#B58EAD), color-stop(0.05, #B57E9D), color-stop(0.5, #A97FA3), color-stop(0.95, #898BB1), to(#9E85AC)); 
+   position:fixed;
+   /*margin: 40px 0px 0px 0px; 外边距*/
+   top: 68px;
+   z-index: 200;/* 堆叠顺序，z轴上，就是浮动于最上面*/
+   
+}
+.globalNav ul
+{
+position: relative;/* 相对定位*/
+		width: 1005px;
+		height: 40px;
+		margin: 0 auto;
+		padding: 0;
+
+
+}
+.globalNav li
+{
+        list-style-type: none;/* 去点圆点*/
+		display: inline;
+}
+
+.globalNav li span.spacer {	
+		float: left;
+		display: block;
+		width: 170px;
+		height: 40px;
+	}
+.globalNav li a {
+			float: left;
+			display: block;/*表现的像一个块*/
+			padding: 10px 44px;
+			font-family: Microsoft Yi Baiti;
+			font-size: 20px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			outline: none; }
+.globalNav a:hover { background: url(../image/back.png) repeat; color: #B382A2; }/**/
+		.globalNav .current { background: url(../image/back.png) repeat; color: #B382A2; }
+
+
+.globalNav li a#logo {
+			position: absolute;/*绝对定位*/
+			top: -58px;
+			padding: 0;
+			width: 166px;
+			height: 166px;
+			text-indent: 166px;
+			line-height: 166px;
+			overflow: hidden;/*这个属性定义溢出元素内容区的内容会如何处理。如果值为 scroll，不论是否需要，用户代理都会提供一种滚动机制。因此，有可能即使元素框中可以放下所有内容也会出现滚动条。默认值是 visible。*/
+			background: url(../image/logo.png);
+			margin-left: -25px;
+		}
+/*=================================导航栏====================================*/
+/*=================================页眉====================================*/
+.header { background:url(../image/line.png) #FFFFFF repeat-x ;/*CSS background 属性*/
+           height:180px;
+           
+           /*position:fixed;CSS position 属性.fixed生成绝对定位的元素，相对于浏览器窗口进行定位。*/
+           top:0;
+           width:100%; 
+           z-index:99;}
+/*=================================页眉====================================*/
+/*======================================轮播=============================*/
+.home img {text-decoration:none;
+	      }/*其实可以不要的*/
+.home a img {border:none;
+	  
+	}/*其实可   clip:rect(0px,40px,0px,300px);以不要的*/
+ul,ol {padding:0;list-style:none;}/*去掉圆点*/
+.home {
+    
+	width:1000px;
+	height:300px;
+	border:9px solid white;/*我加的*/
+	position:relative;     /*生成相对定位的元素，相对于其正常位置进行定位。删掉之后出事了？？？？？？？？？？？？？*/
+	margin:90px auto 0;   /*上外边距是 100px右外边距和左外边距是 浏览器计算 下外边距是 0px*/
+	overflow:hidden;
+	}/*overflow 属性规定当内容溢出元素框时发生的事情。*/
+
+ ol {
+	position:absolute;/*绝对定位的元素的位置相对于最近的已定位祖先元素，如果元素没有已定位的祖先元素，？？？？那么它的位置相对于最初的包含块。*/
+	bottom:10px;/*把图像的底边缘设置在其包含元素底边缘之上 5 像素高的位置：*/
+	right:20px;
+	z-index:10;}
+ol li {
+	float:left;/* float属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。*/
+    width:20px;
+    height:20px;
+   border:2px #B58EAD solid; /**/
+    color:#B58EAD;
+    text-align:center;
+    line-height:20px;/*行高*/
+    margin-right:2px;
+    background:#FCF2CF;
+    cursor:pointer;}/*光标形状手*/
+ ol .on {
+	    background:#B58EAD;/*背景*/
+	    color:#fff;  /*数字颜色*/
+	    font-weight:bold;}
+.home ul {
+	position:absolute;
+	top:0;
+	left:0;}
+.home ul a {display:block;}
+.home ul li img {float:left;}/*删掉也没事？？？？？？？？？？？？？？？？？*/
+/*======================================轮播=============================*/
+/*======================================about me=============================*/
+.aboutme{
+	background:url(../image/bound.png) no-repeat  0 0;/*CSS background 属性*/
+	width:1008px;
+	height:600px;
+	/*border:2px solid red;*/
+	position:relative;     
+	margin:60px auto 0;   
+	overflow:hidden;
+                   
+    }
+   .boundary{
+    margin:30px auto 0;
+	width:1008px;
+	height:50px;
+	/*border:2px solid blue;*/
+	text-align:center;
+	font-family: Minion Pro;
+    font-size: 30px;
+ 
+	}
+	
+  .describe{
+  	float: left;
+    width:500px;
+  height:500px;
+  /*border:2px solid blue;*/
+  background:white;
+  
+
+  }
+  .aboutme h1{
+  	white-space: pre;
+	color:#31b6ed;  /*数字颜色*/
+    font-size: 50px;
+    font-family: Minion Pro;
+  }
+  .describe p{
+  	white-space: pre;
+	font-family:Microsoft Yi Baiti;
+    font-size: 24px;
+    font-family: Microsoft Yi Baiti;
+  }
+  .plane{
+  	float: left;
+    width:500px;
+  height:500px;
+  background:url(../image/fruit.png) no-repeat center;
+  /*border:2px solid blue;*/
+  }
+  .move
+{
+width:200px;
+height:200px;
+background:url(../image/car.png) no-repeat;
+position:relative;
+animation:myfirst 10s infinite;
+-moz-animation:myfirst 10s infinite; /* Firefox */
+-webkit-animation:myfirst 10s infinite; /* Safari and Chrome */
+-o-animation:myfirst 10s infinite; /* Opera */
+}
+
+
+
+
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:url(../image/ball.png) no-repeat; left:0px; top:0px;}
+25%  {background:url(../image/ball.png) no-repeat; left:300px; top:0px;}
+50%  {background:url(../image/ball.png) no-repeat; left:300px; top:350px;}
+75%  {background:url(../image/ball.png) no-repeat; left:0px; top:350px;}
+100% {background:url(../image/ball.png) no-repeat; left:0px; top:0px;}
+}
+
+
+/*======================================about me=============================*/
+/*======================================skill=============================*/
+.skill{
+	background:url(../image/bound.png) no-repeat  top center;/*CSS background 属性*/
+	width:100%;
+	height:500px;
+	/*border:2px solid red;*/
+	position:relative;     
+	margin:60px auto 0;   
+	overflow:hidden;
+                   
+    }
+    .boundaryy{
+    margin:30px auto 0;
+	width:100%;
+	height:50px;
+	/*border:2px solid blue;*/
+	text-align:center;
+	font-family: Minion Pro;
+    font-size: 30px;
+ 
+	}
+   .roate{
+   	width:100%;
+	height:300px;
+	/*border:2px solid blue;*/
+    background:white;
+
+
+   }
+   .js{	
+   	width:100%;
+	height:400px;
+   	background:url(../image/js.png)  no-repeat top center;
+   	
+   	position: relative;
+    
+    top: -80px;
+
+   }
+/*======================================skill=============================*/
+/*======================================hobby=============================*/
+.hobby{
+	background:url(../image/bound.png) no-repeat  top center;/*CSS background 属性*/
+	width:100%;
+	height:500px;
+	/*border:2px solid red;*/
+	position:relative;     
+	margin:0px auto 0;   
+	overflow:hidden;
+
+}
+.boundaryyy{
+	
+    margin:30px auto 0;
+	width:100%;
+	height:50px;
+	/*border:2px solid blue;*/
+	text-align:center;
+	font-family: Minion Pro;
+    font-size: 30px;
+ 
+	}
+	
+.hobby .img
+  {
+  float:left;
+  width:319px;
+  	
+  margin:3px;
+  
+  text-align:center;
+  }
+.hobby.img img
+  {
+  /*display:inline;/
+  margin:0px;
+  padding: 0px;
+  /*border:1px solid #bebebe;*/
+
+  }
+.hobby.img a:hover img
+  {
+  border:2px solid white;
+  }
+
+
+/*======================================hobby=============================*/
+/*======================================contact=============================*/
+.contact{
+	background:url(../image/bound.png) no-repeat  top center;/*CSS background 属性*/
+	width:100%;
+	height:500px;
+	/*border:2px solid red;*/
+	position:relative;     
+	margin:60px auto 0;   
+	overflow:hidden;
+                   
+    }
+    .boundaryyyy{
+    margin:30px auto 0;
+	width:100%;
+	height:50px;
+	/*border:2px solid blue;*/
+	text-align:center;
+	font-family: Minion Pro;
+    font-size: 30px;
+ 
+	}
+.filed{
+	width: 80%;
+	height: 250px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ba86a6;
+}
+.filed input{
+	float: left;
+	clear: both;
+	width: 300px;
+	height: 45px;
+	margin-top: 28px;
+	margin-left: 1em;
+	padding-left: 0.75em;
+	border: none;
+	font-size: 30px;
+	font-family: "Helvetica";
+	line-height: 60px;
+}
+.filed textarea{
+	width: 560px;
+	height: 154px;
+	margin-top: 28px;
+	margin-left: 1em;
+	padding-top: 0.4em;
+	padding-left: 0.75em;
+	border: none;
+	font-size: 30px;
+	font-family: "Helvetica";
+	line-height: 45px;
+}
+.filed .tool{
+	position: relative;
+	top: -4px;
+	left: 382px;
+	width: 585px;
+	height: 30px;
+	background-color: #c5c3c4;
+}
+.filed .tool span{
+	position: absolute;
+	right: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Helvetica";
+	line-height: 30px;
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+	    -ms-transition: all 0.5s ease;
+	     -o-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+}
+.filed .tool span:hover{
+	color: #ad88bb;
+}
+/*======================================contact=============================*/
+.zhuti{
+	width: 100%;
+	height: auto;
+	background:url(../image/line.png) #FFFFFF repeat-x ;/*CSS background 属性*/
+           height:3px;
+           
+           
+           top:0;
+           
+           z-index:99;
+	/*border:2px red solid;======================================红色=============================*/
+}
+* {
+	margin: 0;
+	padding: 0;
+} /*把外边距和内边距设置为 0 可以去除浏览器的默认设定?????*/
